@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a[6],b[5];
+    int i,j;
+    
+    for(i=0;i<6;i++){
+        cout<<"enter array (a)"<<i+1<<" value : ";
+        cin>>a[i];
+    }
+    cout<<"array a is : "<<endl;
+    for(i=0;i<6;i++){
+        cout<<a[i]<<' ';
+    }
+    
+    
+    for(j=0;j<5;j++){
+         cout<<"\nenter array (b)"<<j+1<<" value : ";
+         cin>>b[j];
+    }
+    cout<<"array b is : "<<endl;
+    for(j=0;j<5;j++){
+        cout<<b[j]<<' ';
+    }
+}
