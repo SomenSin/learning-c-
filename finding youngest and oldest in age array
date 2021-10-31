@@ -1,0 +1,32 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int younger,elder,n,i;
+    cout<<"enter no. of elements : "<<endl;
+    cin>>n;
+    int age[n];
+    for(i=0;i<n;i++)
+    {
+        cout<<" enter age of "<<i+1<<" : ";
+        cin>>age[i];
+    }
+    younger=age[0];
+    elder=age[0];
+    for(i=0;i<n;i++)
+    {
+          if(younger>age[i])
+          {
+              younger=age[i];
+          }
+          else
+             if(elder<age[i])
+             {
+                 elder=age[i];
+             }
+        
+    }
+    cout<<"youngest in the age is : "<<younger<<endl;
+    cout<<"oldest in ths age is : "<<elder;
+}
